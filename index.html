@@ -3,49 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Untukmu</title>
+    <title>Pesan Spesial Untukmu 💖</title>
     <style>
         body {
             font-family: 'Georgia', serif;
-            background-color: #fce4ec;
+            background-color: #2c2c2c; /* Latar lebih gelap */
             text-align: center;
             padding: 50px;
+            color: #fff;
+            overflow-x: hidden;
         }
         .container {
-            background: #fff;
+            background: #3e3e3e; /* Kontainer lebih gelap */
             padding: 30px;
             border-radius: 12px;
-            box-shadow: 0 0 15px rgba(255, 105, 180, 0.2);
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
             display: inline-block;
             max-width: 500px;
+            position: relative;
         }
         h1 {
-            color: #d81b60;
-            font-size: 24px;
+            color: #ff80ab;
+            font-size: 26px;
+            animation: bounce 1.5s infinite alternate;
         }
         p {
             font-size: 18px;
-            color: #555;
+            color: #ddd;
             font-style: italic;
             line-height: 1.6;
+        }
+        .emoji {
+            font-size: 30px;
+            animation: float 2s infinite alternate;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-10px); }
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-15px); }
+        }
+        .floating-emoji {
+            position: absolute;
+            font-size: 35px;
+            animation: move 4s infinite linear;
+        }
+        @keyframes move {
+            0% { left: -5%; }
+            100% { left: 105%; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Pesan Untukmu</h1>
-        <p>Setiap hari bersamamu adalah sesuatu yang berharga. Aku bersyukur bisa mengenalmu.</p>
-        <p>Terima kasih telah menjadi bagian dari hidupku dan memberikan warna yang indah.</p>
-        <p>Semoga harimu sehangat senyumanmu.</p>
-        <img src="winwin.jpg" alt="Foto Winwin" style="width:160px; border-radius:12px; box-shadow: 0 0 10px rgba(0,0,0,0.1);"><br>
-        
-        <audio controls>
-    <source src="EUA.mp3" type="audio/mpeg">
-    Browser Anda tidak mendukung pemutar audio.
-</audio><br>
+        <h1>✨ Pesan Spesial Untukmu ✨</h1>
+        <p>Di antara ribuan kenangan yang terlukis dalam pikiranku, kamu adalah bagian yang tak pernah pudar.</p>
+        <p>Hadirmu selalu membawa kehangatan, seperti cahaya lembut yang menerangi tanpa pernah meminta balasan.</p>
+        <p>Terima kasih telah menjadi seseorang yang begitu berarti.</p>
+        <p>Kamu mungkin tidak menyadarinya, tapi kehadiranmu telah mengubah banyak hal menjadi lebih indah.</p>
+        <p>Semoga hari-harimu selalu dipenuhi kebahagiaan, seperti halnya kamu telah memberikan kebahagiaan untuk orang-orang di sekitarmu.</p>
+        <p>Dan aku ingin kamu tahu, bahwa kamu selalu ada di dalam doa dan harapan baikku. 💜</p>
+        <p class="emoji">💫💙💘</p>
+        <img src="winwin.jpg" alt="Foto Winwinn" style="width:160px; border-radius:12px; box-shadow: 0 0 15px rgba(255,255,255,0.2);"><br>
 
-<img src="T.jpg" alt="Foto spesial" style="width:200px; border-radius:12px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+        <!-- Pemutar Lagu -->
+        <audio controls autoplay>
+            <source src="EUA.mp3" type="audio/mpeg">
+            Browser Anda tidak mendukung pemutar audio.
+        </audio><br>
 
+        <!-- Foto Tambahan -->
+        <img src="T.jpg" alt="Foto spesial" style="width:200px; border-radius:12px; box-shadow: 0 0 15px rgba(255,255,255,0.2);">
     </div>
+
+   
 </body>
 </html>
